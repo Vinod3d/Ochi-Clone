@@ -7,14 +7,14 @@ const Featured = () => {
 
 
   return (
-    <div className="w-full p-20">
+    <div className="w-full p-10 lg:p-20">
         <div className="w-full border-b-[1px] border-zinc-700 pb-20">
-            <h1 className="text-7xl font1 tracked-tight">Featured Projects</h1>
+            <h1 className="text-[5vw] font1 tracked-tight">Featured Projects</h1>
         </div>
 
-        <div className="cards w-full flex gap-10 mt-10">
-            <div onMouseEnter={()=>setHovering(true)} onMouseLeave={()=>setHovering(false)} className="cardcontainer relative w-1/2 h-[75vh] rounded-xl ">
-                <h1 className="absolute flex left-full -translate-x-1/2 -translate-y-1/2 overflow-hidden z-[9] leading-none top-1/2 font2 text-8xl text-[#CDEA68]">
+        <div className="cards w-full flex max-lg:flex-col gap-10 mt-10">
+            <div onMouseEnter={()=>setHovering(true)} onMouseLeave={()=>setHovering(false)} className="cardcontainer relative w-1/2 max-lg:w-full h-[75vh] rounded-xl ">
+                <h1 className="absolute flex left-full -translate-x-1/2 max-lg:hidden -translate-y-1/2 overflow-hidden z-[9] leading-none top-1/2 font2 text-8xl text-[#CDEA68]">
                 {"FYDE".split("").map((item, index)=>(
                     <motion.span 
                     initial={{y: "100%"}}  
@@ -32,8 +32,8 @@ const Featured = () => {
                     />
                 </div>
             </div>
-            <div onMouseEnter={()=>setHovering2(true)} onMouseLeave={()=>setHovering2(false)} className="cardcontainer relative w-1/2 h-[75 vh] rounded-xl ">
-                <h1 className="absolute flex right-full translate-x-1/2 -translate-y-1/2  overflow-hidden z-[9] leading-none top-1/2 font2 text-8xl text-[#CDEA68]">
+            <div onMouseEnter={()=>setHovering2(true)} onMouseLeave={()=>setHovering2(false)} className="cardcontainer relative w-1/2 max-lg:w-full h-[75 vh] rounded-xl ">
+                <h1 className="absolute flex right-full translate-x-1/2 -translate-y-1/2 max-lg:hidden  overflow-hidden z-[9] leading-none top-1/2 font2 text-8xl text-[#CDEA68]">
                     {"VISE".split("").map((item, index)=>(
                         <motion.span 
                         key={index}

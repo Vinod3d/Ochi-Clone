@@ -33,7 +33,7 @@ const Landing = () => {
         {["For public and private companies", "From the first pitch to IPO"].map((item, index) => (
           <p
             key={index}
-            className="text-base md:text-lg font1 font-light tracking-tight leading-none"
+            className="text-base md:text-lg max-md:text-2xl max-md:tracking-wide  font1 font-light tracking-tight leading-none"
           >
             {item}
           </p>
